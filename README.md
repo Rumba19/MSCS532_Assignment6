@@ -14,7 +14,7 @@
     ```bash
    pip3 install numpy
 
-### **How to Run**
+## **How to Run**
  -   ```bash 
     git clone https://github.com/Rumba19/MSCS532_Assignment6 
     cd MSCS532_ASSIGNMENT6 
