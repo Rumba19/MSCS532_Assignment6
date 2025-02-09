@@ -10,17 +10,14 @@
 
 ### **Prerequisites to run the script**
 1. **Python**: Ensure Python 3.x is installed. You can download it from [python.org](https://www.python.org/).
-2. **Install Dependencies**: Run the following command to install the required library (`numpy`):
+2. **Install Dependencies and How To Run**: Run the following command to install the required library (`numpy`):
     ```bash
    pip3 install numpy
+    git clone https://github.com/Rumba19/MSCS532_Assignment5
+    cd MSCS532_ASSIGNMENT5
+    python3 quicksort.py
 
-## **How to Run**
- -   ```bash 
-    git clone https://github.com/Rumba19/MSCS532_Assignment6 
-    cd MSCS532_ASSIGNMENT6 
-    python3 selection_algorithm.py
-
----
+ 
 ### **Findings and Observations**
 
  **Performance Comparison:**
