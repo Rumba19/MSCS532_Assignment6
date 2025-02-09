@@ -11,14 +11,14 @@
 ### **Prerequisites to run the script**
 1. **Python**: Ensure Python 3.x is installed. You can download it from [python.org](https://www.python.org/).
 2. **Install Dependencies**: Run the following command to install the required library (`numpy`):
-   ```bash
+    ```bash
    pip3 install numpy
 
-## **How to Run*
-   ```bash
-    git clone https://github.com/Rumba19/MSCS532_Assignment6
-    d MSCS532_ASSIGNMENT6
-   python3 selection_algorithm.py
+### **How to Run**
+ -   ```bash 
+    git clone https://github.com/Rumba19/MSCS532_Assignment6 
+    cd MSCS532_ASSIGNMENT6 
+    python3 selection_algorithm.py
 
 ---
 ### **Findings and Observations**

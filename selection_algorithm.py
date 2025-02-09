@@ -54,7 +54,45 @@ class Stack:
     def is_empty(self):
         return len(self.stack) == 0
 
+class Queue:
+    def __init__(self):
+        self.queue = []
+    def enqueue(self, value):
+        self.queue.append(value)
+    def dequeue(self):
+        if not self.is_empty():
+            return self.queue.pop(0)
+    def is_empty(self):
+        return len(self.queue) == 0
 
+
+class ListNode:
+    def __init__(self, value):
+        self.value = value
+        self.next = None
+class LinkedList:
+    def __init__(self):
+        self.head = None
+    def insert(self, value):
+        new_node = ListNode(value)
+        new_node.next = self.head
+        self.head = new_node
+    def delete(self, value):
+        current = self.head
+        prev = None
+        while current and current.value != value:
+            prev = current
+            current = current.next
+        if prev is None:
+            self.head = current.next
+        elif current:
+            prev.next = current.next
+    def traverse(self):
+        current = self.head
+        while current:
+            print(current.value, end=" -> ")
+            current = current.next
+        print("None")
 if __name__ == "__main__":
     arr = [31, 7, 19, 3, 8, 4, 8, 9, 3]
     k = 3
@@ -67,3 +105,17 @@ if __name__ == "__main__":
     stack.push(33)
     stack.push(30)
     print("Stack Pop:", stack.pop())
+
+  #Output for Queue      
+    queue = Queue()
+    queue.enqueue(5) 
+    queue.enqueue(7) 
+    print("Queue Dequeue:", queue.dequeue())
+
+    linked_list = LinkedList()
+    linked_list.insert(1)
+    linked_list.insert(2)
+    linked_list.insert(3)
+    linked_list.traverse()
+    linked_list.delete(2)
+    linked_list.traverse()
